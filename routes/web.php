@@ -17,10 +17,3 @@ use App\Http\Controllers\BookController;
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::get('/test',[BookController::class, 'index']);
-Route::get('/save',[BookController::class, 'store']);
-Route::get('/show/{id}',[BookController::class, 'show']);
-Route::get('/create',[BookController::class, 'create']);
-Route::get('/update/{id}', [BookController::class, 'update']);
-Route::get('/del/{id}', [BookController::class, 'destroy']);
